@@ -1,0 +1,128 @@
+@media (min-width: 768px) {
+
+    /***** hero*****/
+  .main-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .main-nav-item:link,
+  .main-nav-item:visited {
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  .main-nav-item:hover,
+  .main-nav-item:active {
+    background-color: rgba(255, 255, 255, 0.495);
+    border-radius: 3rem;
+  }
+  .sec-hero {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+
+     /***** features & services*****/
+  .feature-img {
+    height: 60rem;
+    width: 100%;
+  }
+  .graphic-content,
+  .photography-content,
+  .feature-txt {
+    max-width: 55rem;
+    margin-inline: auto;
+  }
+  .grid-item-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .photography-content,
+  .graphic-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+  }
+}
+
+/**********************************************/
+/***********900************/
+
+@media (min-width: 900px) {
+    /**** general***/
+  body {
+    font-size: 1.8rem;
+  }
+  .frow {
+    display: flex;
+    align-items: start;
+  }
+ /**** gallery***/
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+   /**** features***/
+  .grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-change {
+    grid-row: 1/2;
+  }
+
+
+
+    /**** testimonials***/
+
+  .sec-testimonials {
+    padding: 10rem 0;
+  }
+
+    /**** services****/
+  .service-graphics {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+
+
+  .service-photography {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+
+  .service-photography,
+  .service-graphics {
+    height: 50vh;
+  }
+}
+
+/**********************************************/
+/***********1200************/
+
+@media (min-width: 1200px) {
+
+
+
+
+  body {
+    max-width: 1600px;
+    margin-inline: auto;
+  }
+
+  .arrow {
+    margin-top: 15rem;
+    height: 25rem;
+  }
+
+
+  .service-photography,
+  .service-graphics {
+    height: 80vh;
+  }
+
+  .gallery-img {
+    height: 50rem;
+    margin: 0;
+  }
+}
